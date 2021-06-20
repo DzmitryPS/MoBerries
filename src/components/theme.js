@@ -32,6 +32,7 @@ export const theme = {
     },
     media: {
         phone: "390px",
+        regular: "510px",
         tablet: "768px",
     },
     padding: {
