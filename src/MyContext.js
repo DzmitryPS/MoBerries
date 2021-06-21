@@ -15,11 +15,17 @@ export const MyContextProvider = (props) => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
 
-  const [checked, setChecked] = useState(false)
+  const [email, setEmail] = useState("");
+  const [checked, setChecked] = useState(false);
+  const [status, setStatus] = useState("Send");
 
   return (
     <MyContext.Provider
       value={{
+        email,
+        setEmail,
+        status,
+        setStatus,
         checked,
         setChecked,
         price,

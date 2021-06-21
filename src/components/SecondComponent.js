@@ -18,7 +18,6 @@ const SecondComponent = () => {
     context.setName(values.name);
     context.setNumber(values.number);
   };
-
   return (
     <Styles>
       <Form

@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { MyContext } from "../MyContext";
 import styled from "styled-components";
 
@@ -27,7 +27,6 @@ const Assume = () => {
             <p>{`${context.gb} Gigabytes for ${context.month} month`}</p>
             <br />
             <p className="secondP">
-              {" "}
               {`Total price: ${
                 context.gb * context.price - context.gb * context.price * 0.1
               } $`}
@@ -39,9 +38,9 @@ const Assume = () => {
           <span>
             <p>{`${context.gb} Gigabytes for ${context.month} month`}</p>
             <br />
-            <p className="secondP">{`Total price: ${
-              context.gb * context.price
-            } $`}</p>
+            <p className="secondP">
+              {`Total price: ${context.gb * context.price} $`}
+            </p>
           </span>
         </Div>
       )}

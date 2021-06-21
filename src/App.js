@@ -70,12 +70,12 @@ const App = () => {
   const context = useContext(MyContext);
 
   useEffect(() => {
-    try{
-    fetch("https://cloud-storage-prices-moberries.herokuapp.com/prices")
-      .then((response) => response.json())
-      .then((data) => context.setPricesPlan(data.subscription_plans));
+    try {
+      fetch("https://cloud-storage-prices-moberries.herokuapp.com/prices")
+        .then((response) => response.json())
+        .then((data) => context.setPricesPlan(data.subscription_plans));
     } catch (error) {
-       console.log(error)
+      console.log(error);
     }
   }, []);
 
